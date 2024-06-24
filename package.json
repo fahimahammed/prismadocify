@@ -6,14 +6,24 @@
   "author": "Fahim Ahammed Firoz",
   "license": "MIT",
   "scripts": {
-    "prismadocify": "ts-node src/index.ts",
-    "build": "tsc"
+    "prismadocify:dev": "ts-node src/index.ts",
+    "prismadocify": "node dist/index.js",
+    "build": "tsc",
+    "test": "echo \"No tests specified\""
   },
   "keywords": [
     "Prisma",
     "documentation",
     "schemas"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fahimahammed/prismadocify"
+  },
+  "bugs": {
+    "url": "https://github.com/fahimahammed/prismadocify/issues"
+  },
+  "homepage": "https://github.com/fahimahammed/prismadocify/blob/main/README.md",
   "devDependencies": {
     "@types/node": "^20.14.8",
     "ts-node": "^10.9.2",
