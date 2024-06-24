@@ -1,6 +1,6 @@
 {
   "name": "prismadocify",
-  "version": "1.0.9",
+  "version": "1.0.0",
   "description": "Generate documentation for Prisma schemas.",
   "main": "dist/index.js",
   "author": "Fahim Ahammed Firoz",
@@ -9,10 +9,8 @@
     "dev": "ts-node src/index.ts",
     "start": "node dist/index.js",
     "build": "tsc",
-    "test": "echo \"No tests specified\""
-  },
-  "bin": {
-    "prismadocify": "./dist/index.js"
+    "test": "echo \"No tests specified\"",
+    "prismadocify": "node dist/index.js"
   },
   "keywords": [
     "Prisma",
@@ -22,6 +20,9 @@
   "files": [
     "dist"
   ],
+  "bin": {
+    "prismadocify": "./dist/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/fahimahammed/prismadocify"
