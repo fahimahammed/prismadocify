@@ -16,6 +16,9 @@
     "documentation",
     "schemas"
   ],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/fahimahammed/prismadocify"
