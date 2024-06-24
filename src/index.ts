@@ -1,4 +1,4 @@
-// src/index.ts
+#!/usr/bin/env node
 
 import { generateDocumentation } from './documentationGenerator';
 
