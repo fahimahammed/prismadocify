@@ -40,7 +40,8 @@ export const generateDocumentation = async () => {
 
 const parseModels = (schema: string): Model[] => {
     const modelRegex = /model (\w+) \{([^}]+)\}/g;
-    const fieldRegex = /(\w+)\s+(\w+)(\[\])?(!)?(\s*@unique)?/g;
+    //const fieldRegex = /(\w+)\s+(\w+)(\[\])?(!)?(\s*@unique)?/g;
+    const fieldRegex = /(\w+)\s+(\w+)(\[\])?(\?)?(\s*@unique)?/g;
 
     const models: Model[] = [];
     let match: RegExpExecArray | null;
@@ -54,10 +55,11 @@ const parseModels = (schema: string): Model[] => {
 
         while ((fieldMatch = fieldRegex.exec(fieldsBlock)) !== null) {
             const [_, name, type, isList, isRequired, isUnique] = fieldMatch;
+            console.log({ name, type, isRequired })
             fields.push({
                 name,
                 type,
-                isRequired: !type.endsWith('?'),
+                isRequired: isRequired !== '?',
                 isList: !!isList,
                 isUnique: !!isUnique,
             });
@@ -66,6 +68,7 @@ const parseModels = (schema: string): Model[] => {
         models.push({ name: modelName, fields });
     }
 
+    //console.dir(models, { depth: 'inifinity' })
     return models;
 };
 
