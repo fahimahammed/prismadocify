@@ -1,0 +1,26 @@
+{
+  "name": "prismadocify",
+  "version": "1.0.0",
+  "description": "Generate documentation for Prisma schemas.",
+  "main": "index.js",
+  "author": "Fahim Ahammed Firoz",
+  "license": "MIT",
+  "scripts": {
+    "prismadocify": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "Prisma",
+    "documentation",
+    "schemas"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.15.1",
+    "prisma": "^5.15.1"
+  }
+}
