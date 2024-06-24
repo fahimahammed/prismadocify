@@ -1,5 +1,5 @@
+#!/usr/bin/env node
 "use strict";
-// src/index.ts
 Object.defineProperty(exports, "__esModule", { value: true });
 const documentationGenerator_1 = require("./documentationGenerator");
 async function main() {
