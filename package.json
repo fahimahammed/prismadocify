@@ -1,6 +1,6 @@
 {
   "name": "prismadocify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate documentation for Prisma schemas.",
   "main": "dist/index.js",
   "author": "Fahim Ahammed Firoz",
