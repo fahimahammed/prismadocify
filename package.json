@@ -2,7 +2,7 @@
   "name": "prismadocify",
   "version": "1.0.2",
   "description": "Generate documentation for Prisma schemas.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Fahim Ahammed Firoz",
   "license": "MIT",
   "scripts": {
