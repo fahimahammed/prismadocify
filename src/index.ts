@@ -1,4 +1,4 @@
-"use strict";
+// src/index.ts
 
 import { generateDocumentation } from './documentationGenerator';
 
