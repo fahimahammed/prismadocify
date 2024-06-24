@@ -55,7 +55,6 @@ const parseModels = (schema: string): Model[] => {
 
         while ((fieldMatch = fieldRegex.exec(fieldsBlock)) !== null) {
             const [_, name, type, isList, isRequired, isUnique] = fieldMatch;
-            console.log({ name, type, isRequired })
             fields.push({
                 name,
                 type,
