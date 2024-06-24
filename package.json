@@ -1,13 +1,13 @@
 {
   "name": "prismadocify",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Generate documentation for Prisma schemas.",
   "main": "dist/index.js",
   "author": "Fahim Ahammed Firoz",
   "license": "MIT",
   "scripts": {
-    "prismadocify:dev": "ts-node src/index.ts",
-    "prismadocify": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
     "build": "tsc",
     "test": "echo \"No tests specified\""
   },
