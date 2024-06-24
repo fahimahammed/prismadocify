@@ -1,7 +1,9 @@
+// src/index.ts
+
 import { generateDocumentation } from './documentationGenerator';
 
-function main() {
-    generateDocumentation();
+async function run() {
+    await generateDocumentation();
 }
 
-main();
+run();
