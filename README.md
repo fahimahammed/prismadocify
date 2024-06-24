@@ -73,19 +73,7 @@ prismadocify
 
 By default, `prismadocify` looks for the Prisma schema file at `./prisma/schema.prisma` and generates the documentation in `./prisma-docs.md`.
 
-### Example
-
-1. Make sure your Prisma schema file is located at `./prisma/schema.prisma`.
-
-2. Run the `prismadocify` command:
-
-   ```bash
-   prismadocify
-   ```
-
-3. Check the generated `prisma-docs.md` file in the root directory of your project.
-
-### Example
+### Guideline
 
 1. Make sure your Prisma schema file is located at `./prisma/schema.prisma`.
 
