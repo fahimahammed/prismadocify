@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="./assets/logo.png" width="200" alt="Logo">
 </p>
@@ -145,4 +144,6 @@ This project is licensed under the [MIT License](./LICENSE).
 ## Acknowledgements
 
 Thanks to the [Prisma](https://github.com/prisma/prisma) team for their awesome ORM and inspiration for this tool.
+
+#
 
