@@ -25,15 +25,19 @@ export default validateSchema;
 
 // usage in main script if wanted to
 
-//import validateSchema from './schemaValidator';
+// import validateSchema from './schemaValidator';
 
-//async function main() {
-  //  try {
-    //    await validateSchema('prisma/schema.prisma');
-      //  await generateDocumentation();
-    //    console.log('Documentation generation completed.');
- //   } catch (error) {
-     //   console.error('Error generating documentation:', error);
-     //   process.exit(1); // Exit with a non-zero code to indicate failure
-  //  }
-//}
+// async function main() {
+//     const schemaPath = 'prisma/schema.prisma';
+//     try {
+//         await validateSchema(schemaPath);
+//         await generateDocumentation(schemaPath, 'prisma-docs.md', false);
+//         console.log('Documentation generation completed.');
+//     } catch (error) {
+//         console.error('Error:', error.message);
+//         process.exit(1); // Exit with a non-zero code to indicate failure
+//     }
+// }
+
+// main();
+
