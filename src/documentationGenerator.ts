@@ -25,16 +25,16 @@ interface EnumType {
     values: string[];
 }
 
-export const generateDocumentation = async (schemaPath: string, outputPath: string, verbose: boolean) => {
+import loadTemplate from './templateLoader';
+
+export const generateDocumentation = async (schemaPath: string, outputPath: string, verbose: boolean, templatePath?: string) => {
     try {
-        if (verbose) console.log(`Reading schema from ${schemaPath}...`);
         const schema = await fs.readFile(schemaPath, 'utf-8');
-        
         const models = parseModels(schema);
         const enums = parseEnums(schema);
 
-        if (verbose) console.log('Parsing completed. Generating documentation...');
-        const documentation = generateMarkdown(models, enums);
+        const template = await loadTemplate(templatePath);
+        const documentation = generateMarkdown(models, enums, template);
         
         await fs.writeFile(outputPath, documentation);
         console.log(`Documentation generated at ${outputPath}`);
@@ -42,6 +42,7 @@ export const generateDocumentation = async (schemaPath: string, outputPath: stri
         console.error('Error generating documentation:', error);
     }
 };
+
 
 
 const parseModels = (schema: string): Model[] => {
